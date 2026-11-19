@@ -1,0 +1,89 @@
+<!doctype html>
+<html lang="id">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="description" content="Halaman karya Fandika Duroy: proyek website dan karya tulis." />
+    <meta name="theme-color" content="#dedddb" />
+    <title>Karya — Fandika (Duroy)</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=DM+Mono:wght@400;500&family=Space+Grotesk:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="details.css" />
+    <link rel="stylesheet" href="cursor.css" />
+    <script src="cursor.js" defer></script>
+    <script src="api-client.js" defer></script>
+    <script src="public-writings.js" defer></script>
+  </head>
+  <body>
+    <main class="detail-page works-page">
+      <nav class="detail-nav" aria-label="Navigasi">
+        <a class="back-link" href="index.html">← KEMBALI KE PORTOFOLIO</a>
+        <span class="page-count">KARYA / FANDIKA</span>
+      </nav>
+
+      <header class="works-hero">
+        <p class="eyebrow">HALAMAN KARYA / 01</p>
+        <h1>Karya<br /><span>pilihan.</span></h1>
+        <p class="works-intro">
+          Kumpulan proyek dan tulisan yang saya buat selama belajar RPL.
+          Halaman ini akan terus bertambah seiring karya baru.
+        </p>
+      </header>
+
+      <nav class="work-categories" aria-label="Kategori karya">
+        <a class="work-category" href="#website-umkm">
+          <span>01 / PROYEK</span><b>Website UMKM</b><i>↓</i>
+        </a>
+        <a class="work-category" href="#karya-tulis">
+          <span>02 / TULISAN</span><b>Karya Tulis</b><i>↓</i>
+        </a>
+      </nav>
+
+      <section class="work-section" id="website-umkm">
+        <p class="eyebrow">01 / WEBSITE & PROYEK</p>
+        <article class="work-placeholder">
+          <span class="work-status">SEGERA DITAMBAHKAN</span>
+          <h2>Website UMKM<span>.</span></h2>
+          <p>
+            Bagian ini disiapkan untuk proyek website UMKM yang akan saya tambahkan.
+            Nanti detail proyek, gambar, dan tautan websitenya bisa ditampilkan di sini.
+          </p>
+        </article>
+      </section>
+
+      <section class="work-section writing-section" id="karya-tulis">
+        <p class="eyebrow">02 / KARYA TULIS</p>
+        <article class="work-placeholder writing-placeholder">
+          <span class="work-status">CATATAN WRITING</span>
+          <h2>Mulai dari tujuan,<br />isi karya, dan tampilan<span>.</span></h2>
+          <p>
+            Catatan tentang proses menyusun isi portofolio, membangun tampilan,
+            dan mengenal teknologi yang membantu website.
+          </p>
+          <a class="writing-more" href="writing.html">BACA SEMUA CATATAN ↗</a>
+        </article>
+        <section class="member-writings" aria-labelledby="member-writings-title">
+          <p class="eyebrow">03 / TULISAN MEMBER</p>
+          <h3 id="member-writings-title">Tulisan komunitas<span>.</span></h3>
+          <p class="member-writings-status" data-public-writings-status role="status" aria-live="polite">
+            Memuat tulisan yang sudah disetujui admin...
+          </p>
+          <div class="member-writing-list" data-public-writings></div>
+        </section>
+        <div class="member-actions">
+          <a class="writing-more" href="member.html">LOGIN MEMBER / KIRIM TULISAN ↗</a>
+          <a class="admin-entry" href="admin.html">ADMIN ↗</a>
+        </div>
+      </section>
+
+      <footer class="detail-footer">
+        <a href="tentang.html">TENTANG FANDIKA</a>
+        <a href="index.html">KEMBALI KE PORTOFOLIO ↑</a>
+      </footer>
+    </main>
+  </body>
+</html>

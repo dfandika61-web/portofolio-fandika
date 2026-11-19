@@ -1,0 +1,95 @@
+<!doctype html>
+<html lang="id">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="referrer" content="no-referrer" />
+    <meta name="description" content="Masuk sebagai member dan kirim tulisan untuk ditinjau admin." />
+    <meta name="theme-color" content="#dedddb" />
+    <title>Member — Karya Tulis Fandika</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=DM+Mono:wght@400;500&family=Space+Grotesk:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="details.css" />
+    <link rel="stylesheet" href="cursor.css" />
+    <script src="api-client.js" defer></script>
+    <script src="cursor.js" defer></script>
+    <script src="member.js" defer></script>
+  </head>
+  <body>
+    <main class="detail-page auth-page">
+      <nav class="detail-nav" aria-label="Navigasi">
+        <a class="back-link" href="karya.html#karya-tulis">← KEMBALI KE KARYA TULIS</a>
+        <span class="page-count">AREA MEMBER / 01</span>
+      </nav>
+
+      <header class="auth-hero">
+        <p class="eyebrow">KARYA TULIS / MEMBER</p>
+        <h1>Ruang<br /><span>menulis.</span></h1>
+        <p>Masuk dengan undangan admin untuk mengirim tulisan.</p>
+      </header>
+
+      <section class="auth-section" aria-labelledby="member-auth-title">
+        <h2 class="auth-section-title" id="member-auth-title">AKUN MEMBER</h2>
+        <p class="auth-notice" data-backend-setup role="status" aria-live="polite" hidden></p>
+        <p class="form-message" data-member-message role="status" aria-live="polite"></p>
+
+        <form class="auth-form" data-member-login>
+          <label class="form-field">
+            <span>Email</span>
+            <input name="email" type="email" autocomplete="username" maxlength="254" required />
+          </label>
+          <label class="form-field">
+            <span>Kata sandi</span>
+            <input name="password" type="password" autocomplete="current-password" required />
+          </label>
+          <button class="primary-button" type="submit">MASUK ↗</button>
+        </form>
+
+        <form class="auth-form" data-member-password hidden>
+          <p class="form-help">Buat kata sandi untuk menyelesaikan undangan member.</p>
+          <label class="form-field">
+            <span>Kata sandi baru</span>
+            <input name="password" type="password" autocomplete="new-password" minlength="10" required />
+          </label>
+          <button class="primary-button" type="submit">SIMPAN KATA SANDI ↗</button>
+        </form>
+
+        <div class="member-workspace" data-member-workspace hidden>
+          <div class="workspace-header">
+            <p>MASUK SEBAGAI <strong data-member-name></strong></p>
+            <button class="text-button" type="button" data-member-logout>LOGOUT</button>
+          </div>
+
+          <form class="auth-form writing-submit-form" data-writing-submit>
+            <h2>KIRIM TULISAN</h2>
+            <p class="form-help">Tulisan akan masuk antrean dan baru tampil setelah disetujui admin.</p>
+            <label class="form-field">
+              <span>Judul</span>
+              <input name="title" type="text" minlength="3" maxlength="120" required />
+            </label>
+            <label class="form-field">
+              <span>Isi tulisan</span>
+              <textarea name="body" rows="9" minlength="20" maxlength="12000" required></textarea>
+            </label>
+            <button class="primary-button" type="submit">KIRIM UNTUK DITINJAU ↗</button>
+          </form>
+
+          <section class="member-submissions" aria-labelledby="member-submissions-title">
+            <h2 id="member-submissions-title">TULISAN SAYA</h2>
+            <p class="form-message" data-submission-message role="status" aria-live="polite"></p>
+            <div class="member-writing-list" data-member-submissions></div>
+          </section>
+        </div>
+      </section>
+
+      <footer class="detail-footer">
+        <a href="karya.html#karya-tulis">KARYA TULIS</a>
+        <a href="index.html">KEMBALI KE PORTOFOLIO ↑</a>
+      </footer>
+    </main>
+  </body>
+</html>

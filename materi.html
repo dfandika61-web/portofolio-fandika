@@ -1,0 +1,62 @@
+<!doctype html>
+<html lang="id">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="description" content="Catatan belajar RPL Fandika: penjelasan dan contoh kode dasar." />
+    <meta name="theme-color" content="#dedddb" />
+    <title>Materi belajar — Fandika</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=DM+Mono:wght@400;500&family=Space+Grotesk:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="details.css" />
+    <link rel="stylesheet" href="cursor.css" />
+    <script src="materi.js" defer></script>
+    <script src="cursor.js" defer></script>
+  </head>
+  <body>
+    <main class="detail-page lesson-page">
+      <nav class="detail-nav" aria-label="Navigasi">
+        <a class="back-link" href="tentang.html">← KEMBALI KE PROFIL</a>
+        <span class="page-count" data-lesson-number>MATERI / —</span>
+      </nav>
+
+      <section class="lesson-content" data-lesson-content>
+        <p class="eyebrow">CATATAN BELAJAR RPL / FANDIKA</p>
+        <h1 data-lesson-title>Memuat materi…</h1>
+        <p class="lesson-intro" data-lesson-intro></p>
+
+        <div class="code-card">
+          <div class="code-heading"><span>CONTOH DASAR</span><span data-code-language></span></div>
+          <pre><code data-lesson-code></code></pre>
+        </div>
+
+        <section class="learned-section">
+          <p class="eyebrow">YANG SAYA PELAJARI</p>
+          <p data-lesson-learned></p>
+        </section>
+
+        <nav class="other-lessons" aria-label="Materi lainnya">
+          <p class="eyebrow">LANJUT JELAJAHI</p>
+          <div data-other-lessons></div>
+        </nav>
+      </section>
+
+      <section class="lesson-error" data-lesson-error hidden>
+        <p class="eyebrow">MATERI TIDAK DITEMUKAN</p>
+        <h1>Belum ada catatan<br />untuk halaman ini.</h1>
+        <p>Pilih materi dari halaman profil untuk melihat catatan belajarnya.</p>
+        <a class="error-link" href="tentang.html">KEMBALI KE DAFTAR MATERI ↗</a>
+      </section>
+
+      <footer class="detail-footer">
+        <span>FANDIKA / DUROY</span>
+        <a href="index.html">PORTOFOLIO ↑</a>
+      </footer>
+      <noscript><p class="noscript-note">Aktifkan JavaScript untuk melihat catatan materi ini.</p></noscript>
+    </main>
+  </body>
+</html>
