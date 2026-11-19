@@ -5,5 +5,5 @@ pages_build_output_dir = "public"
 [[d1_databases]]
 binding = "DB"
 database_name = "portofolio-db"
-database_id = "GANTI-DENGAN-DATABASE-ID-DARI-CLOUDFLARE"
+database_id = "84a9f4b5-2adf-4832-b7b3-65b9e2c5e222"
 migrations_dir = "migrations"
